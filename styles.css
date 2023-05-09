@@ -1,23 +1,28 @@
+:root{
+    --color-1: #91c55e;
+    --color-2: #d4e6dc;
+    --color-3: #046c35;
+    --color-4: #5c9f7f; 
+    --color-white: white;
+    --color-black: black;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(241, 241, 246);
-}
-nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(187, 234, 15);
+    background-color: var(--color-4);
 }
 
-nav, .logo {
+.logo {
     width: 80px;
     height: 80px;
     border-radius: 50%;
+    border: 2px solid var(--color-3);
 }
+
 nav, ul {
     display: flex;
     justify-content: space-between;
@@ -27,6 +32,94 @@ nav, ul {
 nav, li{
     list-style: none;
 }
-.nav-list {
-    margin-left: 200px;
+
+.nav-list, a {
+    text-decoration: none;
+    color: var(--color-3);
+    font-size: larger;
 }
+.nav-list, a:hover{
+    color: var(--color-2);
+    font-weight: 400;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--color-1);
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+}
+
+.navbar-header{
+    display: flex;
+    gap: 108px;
+    align-items: center;
+}
+
+.enquiry-btn {
+    width: 100%;
+    background-color: var(--color-3);
+    color: var(--color-2);
+    border: 2px solid var(--color-1);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 900;
+}
+.enquiry-btn:hover {
+    border: 1.5px solid var(--color-2);
+}
+.banner-img {
+    width: 100%;
+    height: 100vh;
+   
+}
+
+.banner{
+    position: relative;
+    text-align: center;
+    color: var(--color-black);
+}
+.banner-content {
+    position: absolute;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: var(--color-white);
+    font-weight: bold;
+    border: 3px solid var(--color-white);
+    z-index: 2;
+    width: 70%;
+    padding: 20px;
+    text-align: center;
+  }
+
+.centered-title {
+    padding: 20px;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.centered p{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
