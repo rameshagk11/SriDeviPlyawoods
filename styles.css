@@ -169,3 +169,67 @@ img.catagory-img {
     color: var(--color-3);
     font-weight: 300;
 }
+
+.catagory-last {
+    font-size: 30px;
+    color: var(--color-2);
+    text-align: center;
+}
+
+/* testimonials */
+
+.splide__slide {
+    padding: 3rem 6rem;
+    display: flex;
+    justify-content: center;
+    background: var(--color-4);
+  }
+
+  .splide__slide__container {
+    width: 400px;
+    text-align: left;
+  }
+
+  .slide__content {
+    margin: 1rem 0;
+    font-size: 1.3rem;
+  }
+
+  .slide-img__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .slide-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .slide-img__caption {
+    margin-left: 1rem;
+  }
+
+  .slide-img__caption span {
+    color: #112a46;
+    font-weight: 500;
+  }
+
+  /* Custom styling (Totally Optional)*/
+
+  .splide__pagination__page.is-active {
+    /* //here I have changed the scale from 1.4 to 1.5 */
+    transform: scale(1.5);
+    /* //changed from default bg-color to this */
+    background: #112a46;
+  }
+
+.fb-left{
+    display: flex;
+    width: 50%;
+    overflow: hidden;
+    padding: 20px;
+}
+
