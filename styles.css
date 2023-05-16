@@ -229,7 +229,7 @@ img.catagory-img {
 .fb-left{
     display: flex;
     width: 50%;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 20px;
 }
 
