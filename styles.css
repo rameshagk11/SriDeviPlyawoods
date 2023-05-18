@@ -177,16 +177,56 @@ img.catagory-img {
 }
 
 /* testimonials */
+.testimonials {
+    margin: 50px;
+}
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
 
-.splide__slide {
-    padding: 3rem 6rem;
-    display: flex;
-    justify-content: center;
-    background: var(--color-4);
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding: 3rem 6rem;
+  display: flex;
+  justify-content: center;
+  background: var(--color-pink);
+}
+
+
+/*  */
+.splide__slide__container {
+    width: 600px;
+    text-align: left;
   }
 
-  .splide__slide__container {
-    width: 400px;
+  .slide__content {
+    margin: 1rem 0;
+    font-size: 1.3rem;
+  }
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  background-color: #ffc107;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+
+.splide__slide__container {
+    width: 600px;
     text-align: left;
   }
 
@@ -226,10 +266,33 @@ img.catagory-img {
     background: #112a46;
   }
 
-.fb-left{
-    display: flex;
-    width: 50%;
-    /* overflow: hidden; */
-    padding: 20px;
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
+
+.prev {
+    margin-right: 958px;
+}
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+
+
+/* Footer  */
+.footer {
+    display: flex;
+    width: 40%;
+    background-color: var(--color-white);
+}
+.ft-1 {
+    padding: 10px;
+    align-items: center;
+}
+
 
